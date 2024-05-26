@@ -22,20 +22,6 @@ const MainContent = styled.main`
   flex: 1;
 `;
 
-// function App() {
-//   return (
-//     <AppWrapper>
-//       <Header />
-//       <MainContent>
-//         <Home />
-//         <Sobre />
-//         <Contato />
-//       </MainContent>
-//       <Footer />
-//     </AppWrapper>
-//   );
-// }
-
 function App() {
   return (
     <Router>
@@ -44,8 +30,8 @@ function App() {
         <MainContent>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<Sobre />} />
-            <Route path="/" element={<Contato />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/contato" element={<Contato />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/user-page" element={<UserPage />} />
