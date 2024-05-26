@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,12 +71,6 @@ const CardTitle = styled.div`
   }
 `;
 
-const CardImage = styled.img`
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-`;
 
 const Divider = styled.hr`
   border: 0;
@@ -166,16 +160,17 @@ export const Home = () => {
         />
         <Text>
           <p>
-            Este é o texto que ficará ao lado da imagem. Ele pode conter
-            informações sobre o que é mostrado na imagem ou qualquer outro
-            conteúdo relevante.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </Text>
       </ContentBlock>
 
       <Card>
         <CardTitle>
-          <button>História</button>
+          <button>HISTÓRIA</button>
         </CardTitle>
         <CardContent>
           <CardText>
@@ -228,26 +223,25 @@ export const Home = () => {
       </Card>
       <Card>
         <CardTitle>
-          <button>Facilitadores</button>
+          <button>FACILITADORES</button>
         </CardTitle>
         <CardContent>
           <GridContainer>
-          {images.map((image, index) => (
-            <Row key={index}>
-              <ImageContainer>
-                <Image src={image} alt={`Imagem ${index + 1}`} />
-              </ImageContainer>
-            </Row>
-          ))}
+            {images.map((image, index) => (
+              <Row key={index}>
+                <ImageContainer>
+                  <Image src={image} alt={`Imagem ${index + 1}`} />
+                </ImageContainer>
+              </Row>
+            ))}
           </GridContainer>
-          
+
           <CardText>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
             <button>Conheça todos</button>
           </CardText>

@@ -7,7 +7,9 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2c2f33;
+  background-image: url("https://s3-alpha-sig.figma.com/img/cde4/260d/d3c638cfad92e0da21d6f3060c13ce54?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W80nh0Ydygfe~sV5LZEaO45ayNliXYgaB0T0hT0afC3mdlZF7-I69jQlGao9MFEZHWffcvvyifgnSYLQX28v7k6khbtd4zWjLkTPV0-y~-yDJUW0hBQkHsFdHt5YJmEJF69hCUKysJqYOmnw9Ho6EdEKErt~BL-OqTtkpTfW1cshfigz63Mx5Aovi5GlZpc8KvGrVi~iWs9f6jVsjhFXZJ35Lfx0d-1dH43OiKlDmmmMSajnHhV-k5buhvNfgfk~NUfr2Z6tLKQloxuVDt-dZyUA3BpugGf8WxlX6~T6Aiw01dZog-Vi4FwM78XgJbJJNyDKu5Zv49Bdf835k1x8Lw__");
+  background-size: cover;
+  background-position: center;
 `;
 
 const FormWrapper = styled.div`
@@ -15,12 +17,13 @@ const FormWrapper = styled.div`
   padding: 20px;
   border-radius: 8px;
   background-color: #444444;
-;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1; 
 `;
 
 const FormGroup = styled.div`
