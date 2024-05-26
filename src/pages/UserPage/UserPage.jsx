@@ -1,19 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Section = styled.section`
   height: 88vh;
   display: flex;
-  background-color: #2C2F33;
-;
+  background-color: #2c2f33;
   position: relative;
 `;
 
 const Sidebar = styled.aside`
-  background-color:#444444;
-;
+  background-color: #444444;
   padding: 20px;
   position: absolute;
   top: 0;
@@ -23,30 +19,16 @@ const Sidebar = styled.aside`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-`;
-
-const Header = styled.div`
-  text-align: center;
-`;
-
-const ProfileIcon = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-`;
-
-const ProfileName = styled.div`
-  font-weight: bold;
+  width: 150px;
 `;
 
 const Content = styled.div`
-  margin-top: 20px;
-  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 `;
 
 const Image = styled.img`
@@ -54,16 +36,26 @@ const Image = styled.img`
   height: 100px;
 `;
 
+const DiscordButton = styled.a`
+  background-color: #7289da;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &:hover {
+    background-color: #5865f2;
+  }
+`;
+
 export const UserPage = () => {
   return (
     <Section>
       <Sidebar>
-        <Header>
-          <ProfileIcon>
-            <FontAwesomeIcon icon={faUser} size="2x" color="#fff" />
-          </ProfileIcon>
-          <ProfileName>Nome do Usuário</ProfileName>
-        </Header>
         <Content>
           <p>Sua frase aqui</p>
           <Image
@@ -72,6 +64,13 @@ export const UserPage = () => {
           />
         </Content>
       </Sidebar>
+      <DiscordButton
+        href="https://discord.gg/DQGzwpxp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Entrar no Discord
+      </DiscordButton>
     </Section>
   );
 };
